@@ -1,0 +1,61 @@
+# Symbols no library, runtime or megatouch-host provides (2026-10-07)
+# megatouch-host loads the game with RTLD_NOW, so each of these must be defined
+# (usually in src/host/loader_services.cpp) before the game will start.
+# symbol | needed by
+ExactClick | switcheroo.so
+ClearAPreWave(char*) | switcheroo.so
+megaend() | switcheroo.so
+megastart(char const*, app_common::args_t*) | switcheroo.so
+WorldClass::LoadBmp(char const*, int, float, int, int, bool, bool, Bitmap*) | switcheroo.so
+WorldClass::SetBack(Bitmap*, int) | switcheroo.so
+WorldClass::ShowAll() | switcheroo.so
+WorldClass::DeleteBmp(Bitmap*, unsigned char) | switcheroo.so
+WorldClass::PlayMovie(int, unsigned long, void (*)(unsigned char), unsigned char, bool, bool, bool, bool) | switcheroo.so
+WorldClass::WorldClass() | switcheroo.so
+ContinueControl::display() | switcheroo.so
+abstract_db_class::GeneralQuery(char const*, int (*)(void*, int, char**, char**), void*) | switcheroo.so
+List::Push(Group*) | switcheroo.so
+Group::Signal(Group::SpriteSignalType) | switcheroo.so
+Group::Signal(SpriteSignal*) | switcheroo.so
+Group::Message(Group::SpriteSignalType) | switcheroo.so
+Group::Message(SpriteSignal*) | switcheroo.so
+Bitmap::DeCompress() | switcheroo.so
+Bitmap::GreyBmp() | switcheroo.so
+Bitmap::Compress(bool, int, unsigned short*) | switcheroo.so
+EventO::GetType() | switcheroo.so
+EventO::EventO() | switcheroo.so
+EventO::~EventO() | switcheroo.so
+Sprite::DoNextFrame() | switcheroo.so
+Sprite::SpriteClick() | switcheroo.so
+Sprite::AssignString(String*, unsigned long) | switcheroo.so
+Sprite::ClicksEnabled | switcheroo.so
+Sprite::Move(int, int, int, int, int, int, unsigned long, unsigned long, unsigned char) | switcheroo.so
+Sprite::Reset() | switcheroo.so
+Sprite::DoDraw() | switcheroo.so
+Sprite::Enable(unsigned long) | switcheroo.so
+Sprite::SetBmp(Bitmap*, unsigned long) | switcheroo.so
+Sprite::Signal(Group::SpriteSignalType) | switcheroo.so
+Sprite::Signal(SpriteSignal*) | switcheroo.so
+Sprite::Disable(unsigned long, bool) | switcheroo.so
+Sprite::Message(Group::SpriteSignalType) | switcheroo.so
+Sprite::Message(SpriteSignal*) | switcheroo.so
+Sprite::RunAnim(Bitmap*, int, int, int, unsigned long, float, unsigned long, int) | switcheroo.so
+Sprite::SetCord(float, float, float, unsigned long) | switcheroo.so
+Sprite::SetSize(int, int) | switcheroo.so
+Sprite::DoCommand(int) | switcheroo.so
+Sprite::Sprite(Bitmap*, unsigned long, Sprite*) | switcheroo.so
+Sprite::Sprite(Bitmap*, unsigned long, Sprite*) | switcheroo.so
+Sprite::~Sprite() | switcheroo.so
+String::String(char const*, int, char const*, int, signed char, int, int, int, unsigned char, unsigned char, unsigned short) | switcheroo.so
+DBGlobals::Instance() | switcheroo.so
+typeinfo for EventO | switcheroo.so
+typeinfo for Sprite | switcheroo.so
+vtable for DOSLinuxWorld | switcheroo.so
+_rgb_b_shift_16 | switcheroo.so
+_rgb_g_shift_16 | switcheroo.so
+_rgb_r_shift_16 | switcheroo.so
+_rgb_scale_5 | switcheroo.so
+_rgb_scale_6 | switcheroo.so
+gfx_driver | switcheroo.so
+screen | switcheroo.so
+set_mouse_sprite | switcheroo.so
